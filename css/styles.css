@@ -153,6 +153,8 @@ margin-left: 50px;
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+transition-property: transition-duration, transition-timing-function;
+transition: var(--transition-time-main) var(--time-function);
   color: var(--accent-color);
 }
 
@@ -220,6 +222,8 @@ transition: opacity var(--transition-time-main) var(--time-function);
 
 .contacts .link:hover,
 .contacts .link:focus {
+  transition-property: transition-duration, transition-timing-function;
+  transition: var(--transition-time-main) var(--time-function);
   color: var(--accent-color);
 }
 
@@ -339,6 +343,8 @@ transition: opacity var(--transition-time-main) var(--time-function);
 
 .primary-button:hover,
 .primary-button:focus {
+  transition-property: transition-duration, transition-timing-function;
+  transition: var(--transition-time-main) var(--time-function);
   background-color: var(--component-active-color);
 }
 
@@ -366,6 +372,8 @@ transition: opacity var(--transition-time-main) var(--time-function);
 
 .features-card-icon:hover,
 .features-card-icon:focus {
+  transition-property: transition-duration, transition-timing-function;
+  transition: var(--transition-time-main) var(--time-function);
   fill: var(--accent-color);
 }
 
@@ -503,6 +511,8 @@ transform: translateY(-100%);
 
 .network-link:hover,
 .network-link:focus {
+  transition-property: transition-duration, transition-timing-function;
+  transition: var(--transition-time-main) var(--time-function);
   color: var(--primary-button-color);
   background-color: var(--accent-color);
 }
@@ -584,6 +594,8 @@ transform: translateY(-100%);
 
 .client-link:hover,
 .client-link:focus {
+  transition-property: transition-duration, transition-timing-function;
+  transition: var(--transition-time-main) var(--time-function);
   color: var(--accent-color);
   background-color: var(--primary-button-color);
 }
@@ -607,6 +619,8 @@ transform: translateY(-100%);
 
 .client-link:hover,
 .client-link:focus {
+  transition-property: transition-duration, transition-timing-function;
+  transition: var(--transition-time-main) var(--time-function);
   border: 1px solid var(--accent-color);
 }
 
@@ -666,6 +680,8 @@ transform: translateY(-100%);
 
 .footer-contact:hover,
 .footer-contact:focus {
+  transition-property: transition-duration, transition-timing-function;
+  transition: var(--transition-time-main) var(--time-function);
   color: var(--accent-color);
 }
 
@@ -707,6 +723,8 @@ transform: translateY(-100%);
 
 .filter-button:hover,
 .filter-button:focus {
+  transition-property: transition-duration, transition-timing-function;
+  transition: var(--transition-time-main) var(--time-function);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -775,6 +793,8 @@ transition: var(--transition-time-main) var(--time-function);
 .work-example:focus {
   width: 100%;
   height: 100%;
+  transition-property: transition-duration, transition-timing-function;
+  transition: var(--transition-time-main) var(--time-function);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -796,6 +816,8 @@ transition: var(--transition-time-main) var(--time-function);
 
 .secondary-button:hover,
 .secondary-button:focus {
+  transition-property: transition-duration, transition-timing-function;
+  transition: var(--transition-time-main) var(--time-function);
   color: var(--primary-button-color);
   background-color: var(--accent-color);
 }
@@ -847,6 +869,8 @@ transition: var(--transition-time-main) var(--time-function);
 
 .footer.network-link:hover,
 .footer.network-link:focus {
+  transition-property: transition-duration, transition-timing-function;
+  transition: var(--transition-time-main) var(--time-function);
   color: var(--primary-button-color);
   background-color: var(--accent-color);
 }
