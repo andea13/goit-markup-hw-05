@@ -54,13 +54,15 @@
 
   <!--section Hero, для майбутнього оформлення великого чорного квадрата-->
   <main>
+
+
     <section class="section hero">
       <div class="container container-hero">
         <h1 class="hero-title">
           ефективні рішення для<br />
           вашого бізнесу
         </h1>
-        <button type="button" class="button primary-button">
+        <button data-modal-open type="button" class="button primary-button">
           Замовити послугу
         </button>
       </div>
@@ -448,6 +450,18 @@
       </div>
     </div>
   </footer>
+<!-- бекдроп і модальне вікно -->
+  <div data-modal class="backdrop is-hidden">
+    <div class="modal">
+      <button class="button-close" data-modal-close>
+        <svg width="11px" height="11px" class="close-icon">
+          <use href="./images/icons.svg.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
