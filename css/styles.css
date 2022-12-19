@@ -144,12 +144,12 @@ margin-left: 50px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+ transition: transform var(--transition-time-main) var(--time-function);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
   color: var(--accent-color);
 }
 
@@ -210,12 +210,12 @@ margin-left: 50px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: transform var(--transition-time-main) var(--time-function);
 }
 
 .contacts .link:hover,
 .contacts .link:focus {
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
   color: var(--accent-color);
 }
 
@@ -284,14 +284,16 @@ margin-left: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 528px;
+ min-width: 528px;
   min-height: 581px;
   padding: 14px;
   border-radius: 4px;
   background-color: var(--primary-button-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transform: translate(-50%, -50%);
+  transition: transform var(--transition-time-main) var(--time-function);
 }
 
 .close-icon {
@@ -382,12 +384,12 @@ margin-left: 50px;
   text-align: center;
   border: none;
   cursor: pointer;
+
+  transition: transform var(--transition-time-main) var(--time-function);
 }
 
 .primary-button:hover,
 .primary-button:focus {
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
   background-color: var(--component-active-color);
 }
 
@@ -411,12 +413,12 @@ margin-left: 50px;
   width: 70px;
   height: 70px;
   fill: currentColor;
+
+  transition: transform var(--transition-time-main) var(--time-function);
 }
 
 .features-card-icon:hover,
 .features-card-icon:focus {
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
   fill: var(--accent-color);
 }
 
@@ -546,6 +548,8 @@ margin-left: 50px;
   color: var(--network-icon-color);
   text-decoration: none;
   font-size: 0;
+
+  transition: transform var(--transition-time-main) var(--time-function);
 }
 
 .network-icon {
@@ -554,8 +558,6 @@ margin-left: 50px;
 
 .network-link:hover,
 .network-link:focus {
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
   color: var(--primary-button-color);
   background-color: var(--accent-color);
 }
@@ -635,14 +637,6 @@ margin-left: 50px;
   margin-left: 0;
 }
 
-.client-link:hover,
-.client-link:focus {
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
-  color: var(--accent-color);
-  background-color: var(--primary-button-color);
-}
-
 .client-link {
   display: flex;
   align-items: center;
@@ -653,6 +647,8 @@ margin-left: 50px;
   margin-bottom: 0;
   border: 1px solid var(--network-icon-color);
   border-radius: 4px;
+
+  transition: transform var(--transition-time-main) var(--time-function);
 }
 
 .client-icon {
@@ -662,8 +658,6 @@ margin-left: 50px;
 
 .client-link:hover,
 .client-link:focus {
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
   border: 1px solid var(--accent-color);
 }
 
@@ -719,12 +713,12 @@ margin-left: 50px;
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
+
+  transition: transform var(--transition-time-main) var(--time-function);
 }
 
 .footer-contact:hover,
 .footer-contact:focus {
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
   color: var(--accent-color);
 }
 
@@ -764,10 +758,12 @@ margin-left: 50px;
   margin-left: 0;
 }
 
+.filter-button{
+  transition: transform var(--transition-time-main) var(--time-function);
+}
+
 .filter-button:hover,
 .filter-button:focus {
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -784,7 +780,10 @@ margin-left: 50px;
   max-width: 370px;
   max-height: 404px;
   list-style: none;
+
+  transition: transform var(--transition-time-main) var(--time-function);
 }
+
 
 .work-example:nth-child(3n) {
   margin-right: 0;
@@ -812,14 +811,12 @@ margin-left: 50px;
   color: var(--primary-button-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
 }
+ 
 
 a:hover .portfolio-overlay {
   transform: translateY(0);
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
+  transition: transform var(--transition-time-main) var(--time-function);
 }
 
 .portfolio-card {
@@ -835,8 +832,6 @@ a:hover .portfolio-overlay {
 .work-example:focus {
   width: 100%;
   height: 100%;
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -854,12 +849,12 @@ a:hover .portfolio-overlay {
   border-radius: 4px;
   padding: 6px 22px;
   border: 1px solid transparent;
+
+  transition: transform var(--transition-time-main) var(--time-function);
 }
 
 .secondary-button:hover,
 .secondary-button:focus {
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
   color: var(--primary-button-color);
   background-color: var(--accent-color);
 }
@@ -907,13 +902,13 @@ a:hover .portfolio-overlay {
   font-size: 0;
   color: var(--primary-button-color);
   background-color: var(--foooter-icon-color);
+
+  transition: transform var(--transition-time-main) var(--time-function);
 }
 
 .footer.network-link:hover,
 .footer.network-link:focus {
-  transition-property: transition-duration, transition-timing-function;
-  transition: var(--transition-time-main) var(--time-function);
-  color: var(--primary-button-color);
+color: var(--primary-button-color);
   background-color: var(--accent-color);
 }
 
