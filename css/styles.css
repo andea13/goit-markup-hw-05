@@ -145,7 +145,7 @@ margin-left: 50px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
- transition: transform var(--transition-time-main) var(--time-function);
+ transition: color var(--transition-time-main) var(--time-function);
 }
 
 .site-nav .link:hover,
@@ -211,7 +211,7 @@ margin-left: 50px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: transform var(--transition-time-main) var(--time-function);
+  transition: color var(--transition-time-main) var(--time-function);
 }
 
 .contacts .link:hover,
@@ -385,7 +385,7 @@ margin-left: 50px;
   border: none;
   cursor: pointer;
 
-  transition: transform var(--transition-time-main) var(--time-function);
+  transition: background-color var(--transition-time-main) var(--time-function);
 }
 
 .primary-button:hover,
@@ -414,7 +414,7 @@ margin-left: 50px;
   height: 70px;
   fill: currentColor;
 
-  transition: transform var(--transition-time-main) var(--time-function);
+  transition: fill var(--transition-time-main) var(--time-function);
 }
 
 .features-card-icon:hover,
@@ -549,7 +549,7 @@ margin-left: 50px;
   text-decoration: none;
   font-size: 0;
 
-  transition: transform var(--transition-time-main) var(--time-function);
+  transition: color background-color var(--transition-time-main) var(--time-function);
 }
 
 .network-icon {
@@ -629,11 +629,11 @@ margin-left: 50px;
   margin-right: 30px;
 }
 
-.client-link:last-child {
+.client-item:last-child{
   margin-right: 0;
 }
 
-.client-link:first-child {
+.client-item:first-child {
   margin-left: 0;
 }
 
@@ -648,17 +648,20 @@ margin-left: 50px;
   border: 1px solid var(--network-icon-color);
   border-radius: 4px;
 
-  transition: transform var(--transition-time-main) var(--time-function);
+  transition: color border-color fill var(--transition-time-main) var(--time-function);
 }
 
 .client-icon {
   fill: currentColor;
-  border-radius: 4px;
+  margin: auto;
+  cursor: pointer;
 }
 
 .client-link:hover,
 .client-link:focus {
-  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* футер */
@@ -714,7 +717,7 @@ margin-left: 50px;
   line-height: 1.71;
   text-align: left;
 
-  transition: transform var(--transition-time-main) var(--time-function);
+  transition: color var(--transition-time-main) var(--time-function);
 }
 
 .footer-contact:hover,
@@ -750,23 +753,14 @@ margin-left: 50px;
   flex-basis: calc((100% - 32px) / 5);
 }
 
-.secondary-button:last-child {
+.filter-button:last-child {
   margin-right: 0;
 }
 
-.secondary-button:first-child {
+.filter-button:first-child {
   margin-left: 0;
 }
 
-.filter-button{
-  transition: transform var(--transition-time-main) var(--time-function);
-}
-
-.filter-button:hover,
-.filter-button:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
 .projects {
   display: flex;
@@ -781,7 +775,7 @@ margin-left: 50px;
   max-height: 404px;
   list-style: none;
 
-  transition: transform var(--transition-time-main) var(--time-function);
+  transition: box-shadow var(--transition-time-main) var(--time-function);
 }
 
 
@@ -830,8 +824,6 @@ a:hover .portfolio-overlay {
 
 .work-example:hover,
 .work-example:focus {
-  width: 100%;
-  height: 100%;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -849,14 +841,17 @@ a:hover .portfolio-overlay {
   border-radius: 4px;
   padding: 6px 22px;
   border: 1px solid transparent;
+  box-shadow: none;
 
-  transition: transform var(--transition-time-main) var(--time-function);
+  transition: color background-color box-shadow var(--transition-time-main) var(--time-function);
 }
 
 .secondary-button:hover,
 .secondary-button:focus {
   color: var(--primary-button-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-subtitle {
@@ -903,7 +898,7 @@ a:hover .portfolio-overlay {
   color: var(--primary-button-color);
   background-color: var(--foooter-icon-color);
 
-  transition: transform var(--transition-time-main) var(--time-function);
+  transition: color background-color var(--transition-time-main) var(--time-function);
 }
 
 .footer.network-link:hover,
