@@ -145,7 +145,7 @@ margin-left: 50px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
- transition: color var(--transition-time-main) var(--time-function);
+  transition: color var(--transition-time-main) var(--time-function);
 }
 
 .site-nav .link:hover,
@@ -284,7 +284,7 @@ margin-left: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
- min-width: 528px;
+  min-width: 528px;
   min-height: 581px;
   padding: 14px;
   border-radius: 4px;
@@ -549,7 +549,8 @@ margin-left: 50px;
   text-decoration: none;
   font-size: 0;
 
-  transition: color background-color var(--transition-time-main) var(--time-function);
+  transition: color background-color var(--transition-time-main)
+    var(--time-function);
 }
 
 .network-icon {
@@ -629,7 +630,7 @@ margin-left: 50px;
   margin-right: 30px;
 }
 
-.client-item:last-child{
+.client-item:last-child {
   margin-right: 0;
 }
 
@@ -648,7 +649,8 @@ margin-left: 50px;
   border: 1px solid var(--network-icon-color);
   border-radius: 4px;
 
-  transition: color border-color fill var(--transition-time-main) var(--time-function);
+  transition: color border-color fill var(--transition-time-main)
+    var(--time-function);
 }
 
 .client-icon {
@@ -761,7 +763,6 @@ margin-left: 50px;
   margin-left: 0;
 }
 
-
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -777,7 +778,6 @@ margin-left: 50px;
 
   transition: box-shadow var(--transition-time-main) var(--time-function);
 }
-
 
 .work-example:nth-child(3n) {
   margin-right: 0;
@@ -806,7 +806,6 @@ margin-left: 50px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
 }
- 
 
 a:hover .portfolio-overlay {
   transform: translateY(0);
@@ -843,7 +842,8 @@ a:hover .portfolio-overlay {
   border: 1px solid transparent;
   box-shadow: none;
 
-  transition: color background-color box-shadow var(--transition-time-main) var(--time-function);
+  transition: color background-color box-shadow var(--transition-time-main)
+    var(--time-function);
 }
 
 .secondary-button:hover,
@@ -851,7 +851,7 @@ a:hover .portfolio-overlay {
   color: var(--primary-button-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-subtitle {
@@ -898,12 +898,13 @@ a:hover .portfolio-overlay {
   color: var(--primary-button-color);
   background-color: var(--foooter-icon-color);
 
-  transition: color background-color var(--transition-time-main) var(--time-function);
+  transition: color background-color var(--transition-time-main)
+    var(--time-function);
 }
 
 .footer.network-link:hover,
 .footer.network-link:focus {
-color: var(--primary-button-color);
+  color: var(--primary-button-color);
   background-color: var(--accent-color);
 }
 
